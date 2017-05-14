@@ -1,0 +1,412 @@
+body {
+  font-family: GothamPR;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialised; 
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; 
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; 
+}
+
+.hidden {
+  display: none; 
+}
+/*Сайдбар*/
+.left_side {
+  background-color: #ececec;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 10;
+  color: #333;
+  outline: none;
+  transition: 0.5s; 
+  overflow-x: hidden;
+}
+.left_side.active {
+  width: 300px;
+}
+.left_side.active .user_info {
+  opacity: 1;
+
+}
+/*Кнопка в меню*/
+.btn_mnu {
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+.btn_row {
+  height: 2px;
+  width: 31%;
+  margin: 1px 0;
+  border: solid 0;
+  border-radius: 4px;
+  background-color: #000;
+  position: relative;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.btn_mnu.active .btn_row:first-child {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  top: 8px;
+  width: 24%;
+}
+.btn_mnu.active .btn_row:last-child {
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: -7px;
+  width: 24%;
+}
+.btn_mnu.active .btn_row:nth-child(2) {
+  opacity: 0;
+}
+/*Контент в меню*/
+.aside_content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 35px 0;
+}
+/*Информация о пользователе*/
+.user_info {
+  opacity: 0;
+  text-align: center;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.user_info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.user_info h2 {
+  font-size: 22px;
+  font-family: Raleway;
+  font-weight: 600;
+}
+.user_info p {
+  font-size: 12px;
+  font-family: GothamPR;
+  color: #444;
+}
+
+.aside_content nav {
+  margin: 35px 0;
+}
+.aside_content ul,
+.aside_content li {
+  margin: 0;
+  padding: 0;
+  letter-spacing: normal;
+}
+.aside_content li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 10px 70px;
+    white-space: nowrap;
+    border-bottom: solid 1px #ccc;
+    transition: 0.5s;
+}
+.left_side.active .aside_content li a:hover {
+  text-indent: 5px;
+}
+.aside_content li a:hover,
+.aside_content li.current-menu-item a {
+  background-color: #fff;
+}
+.aside_content li.menu-item-home a {
+  background-color: transparent;
+}
+.aside_content li:first-child a {
+  border-top: solid 1px #ccc;
+}
+.aside_content li a::before {
+    font-family: Awesome;
+    font-size: 18px;
+    margin-left: -55px;
+    margin-right: 22px;
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+.aside_content li:nth-child(1) a::before {
+    content: "\f0b1";
+}
+.aside_content li:nth-child(2) a::before {
+    content: "\f2c2";
+    font-size: 16px;
+}
+.aside_content li:nth-child(3) a::before {
+    content: "\f041";
+    font-size: 21px;
+    margin-top: -3px;
+    margin-left: -52px;
+    margin-right: 25px;
+}
+.left_side.active .aside_content li a::before {
+  margin-left: 0;
+}
+.left_side.active .aside_content li:nth-child(3) a::before {
+  margin-left: 5px;
+}
+.left_side .aside_content nav {
+  margin-top: -110px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 5;
+}
+.left_side.active .aside_content nav {
+  margin-top: 35px;
+}
+/*Загрузка*/
+.loader .loader_inner h1 {
+  font-family: MuseoSans;
+  font-size: 47px;
+
+}
+
+.loader .loader_inner {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #ececec;
+  z-index: 15;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.loader .loader_inner .dot {
+  width: 10px;
+  height: 10px;
+  margin: 30px 8px 0;
+  border-radius: 20px;
+  background-color: tomato;
+  animation: dot 1s infinite;
+}
+@keyframes dot {
+  from {background-color: transparent;}
+  to {background-color: tomato;}
+}
+
+.content {
+  position: relative;
+  margin: 5px 5px 55px 55px;
+  left: 0;
+}
+.gallery a {
+   overflow: hidden;
+   width: 320px;
+   min-height: 50px;
+   display: block;
+}
+.gallery a {
+  background: #000;
+}
+.gallery a::after{
+  content: attr(data-description);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 5px;
+  margin: 8px;
+  font-family: GothamPR;
+  opacity: 0;
+  z-index: 0;
+  text-align: center;
+  align-items: center;
+  
+}
+.gallery a:hover::after {
+  opacity: 1;
+  z-index: 1;
+}
+.gallery img {
+  display: block;
+  max-width: 100%;
+  transition: 0.5s;
+}
+.gallery img:hover {
+  transform: scale(1.1); 
+}
+.left_side.active + .content {
+  left: 250px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.filter_items {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  color: #333;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+}
+.filter_label {
+  background-color: transparent;
+  border-color: #333;
+  transition: 0.5s;
+  padding: 5px 15px;
+  opacity: 0.8;
+  margin: 0 3px 8px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  border: 1px solid;
+  border-radius: 2px;
+  outline: none;
+}
+.filter_label:hover, .filter_label.active {
+  background-color: #333;
+  border-color: #333;
+  opacity: 1;
+  color: #fff;
+}
+/*ABOUT*/
+.inside {
+  background-color: #333;
+}
+.inside .content {
+  padding: 80px 5% 40px;
+  color: #fff;
+}
+.content_header {
+  text-align: center;
+
+}
+.content_header p {
+  font-family: GothamPR;
+  letter-spacing: 3px;
+}
+.content_header h1 {
+  font-family: MuseoSans;
+  letter-spacing: 10px;
+}
+.content_header img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+.content_body {
+  margin-top: 35px;
+  font-size: 16px;
+}
+/*socialIcons*/
+.socicons {
+
+  width: 100%;
+  height: 50px;
+  font-family: Awesome;
+  display: flex;
+}
+.icon {
+  font-size: 20px;
+  color: #333;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #fff;
+  margin: 0 5px 0;
+  border-radius: 50px;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.icon:hover {
+  text-decoration: none;
+  color: #eee;
+  background-color: #333;
+}
+.instagram:before {
+    content: "\f16d";
+}
+.github:before {
+    content: "\f09b";
+}
+.vk:before {
+    content: "\f189";
+}
+.telegram:before {
+  content: "\f2c6";
+}
+.twitter:before {
+    content: "\f099";
+}
+.mailto:before {
+    content: "\f0e0";
+}
+.post+.content {
+  margin: 0;
+}
+.post {
+ font-family: MuseoSans;
+ display: block;
+ overflow: hidden;
+}
+.post img {
+  margin: auto;
+  height: auto;
+}
+.aligncenter {
+  text-align: center;
+}
+.size-full {
+  width: 100%;
+}
+.post h1 {
+  text-align: center;
+}
+.post p {
+  font-family: GothamPR;
+  font-weight: 100;
+}
+.post a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.gallery h3 {
+  text-align: center;
+  margin-top: 20px;
+}
