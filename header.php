@@ -30,7 +30,7 @@
 		<div class="aside_content">
 			
 			<div class="user_info">
-				<img src="<?php echo get_the_post_thumbnail_url(7); ?>" alt="Колесников Егор" />
+				<img src="<?php echo get_the_post_thumbnail_url(8); ?>" alt="Колесников Егор" />
 				<h2><?php echo get_bloginfo('name'); ?></h2>
 				<p><?php echo get_bloginfo('description'); ?></p>
 			</div>
