@@ -29,7 +29,7 @@ $portfolio = new WP_Query( $args );
 <?php endwhile; else: ?>
 
 	<h3>Записей нет</h3>
-	<!-- Нету записей -->
+	<!-- Нет записей -->
 
 <?php endif ?> 
 <?php endif ?>
