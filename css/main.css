@@ -1,11 +1,11 @@
 body {
-  font-family: GothamPR;
-  font-weight: 600;
+  font-family: Intro;
+  font-weight: ;
   font-size: 14px;
   min-width: 320px;
   position: relative;
   line-height: 1.7;
-  -webkit-font-smoothing: antialised; 
+  -webkit-font-smoothing: subpixel-antialiased; 
   overflow-x: hidden;
   background-color: #fff;
 }
@@ -25,14 +25,14 @@ body textarea:required:valid {
 }
 /*Сайдбар*/
 .left_side {
-  background-color: #ececec;
+  background-color: #3f6bbb;
   position: fixed;
   left: 0;
   top: 0;
   width: 50px;
   height: 100%;
   z-index: 10;
-  color: #333;
+  color: #fff;
   outline: none;
   transition: 0.5s; 
   overflow-x: hidden;
@@ -66,8 +66,8 @@ body textarea:required:valid {
   width: 31%;
   margin: 1px 0;
   border: solid 0;
-  border-radius: 4px;
-  background-color: #000;
+  border-radius: 0;
+  background-color: #fff;
   position: relative;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -114,13 +114,13 @@ body textarea:required:valid {
 }
 .user_info h2 {
   font-size: 22px;
-  font-family: Raleway;
+  font-family: Intro;
   font-weight: 600;
 }
 .user_info p {
   font-size: 12px;
   font-family: GothamPR;
-  color: #444;
+  color: #fff;
 }
 
 .aside_content nav {
@@ -133,12 +133,11 @@ body textarea:required:valid {
   letter-spacing: normal;
 }
 .aside_content li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 10px 0 10px 70px;
     white-space: nowrap;
-    border-bottom: solid 1px #ccc;
     transition: 0.5s;
 }
 .left_side.active .aside_content li a:hover {
@@ -152,7 +151,7 @@ body textarea:required:valid {
   background-color: transparent;
 }
 .aside_content li:first-child a {
-  border-top: solid 1px #ccc;
+
 }
 .aside_content li a::before {
     font-family: Awesome;
@@ -286,22 +285,20 @@ body textarea:required:valid {
 }
 .filter_label {
   background-color: transparent;
-  border-color: #333;
   transition: 0.5s;
-  padding: 5px 15px;
+  padding: 0px 0px;
   opacity: 0.8;
   margin: 0 3px 8px;
   font-size: 13px;
+  border: none;
   letter-spacing: 3px;
-  border: 1px solid;
-  border-radius: 2px;
   outline: none;
 }
 .filter_label:hover, .filter_label.active {
-  background-color: #333;
-  border-color: #333;
+  background-color: none;
   opacity: 1;
-  color: #fff;
+  border-bottom: solid 4px #3f6bbb;
+  color: #3f6bbb;
 }
 /*ABOUT*/
 .inside {
