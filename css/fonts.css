@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "GothamPR";
-    src: url(../fonts/GOTHAMPROREGULAR.TTF);
+    font-family: "Myfont";
+    src: url(../fonts/myfont.ttf);
 }
 
 @font-face {
@@ -55,4 +55,34 @@
 @font-face {
     font-family: "Raleway";
     src: url(../fonts/Raleway.ttf);
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/GothamProLight.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/GothamProRegular.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/GothamProMedium.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/GothamProBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/GothamPrBlack.ttf);
+    font-weight: 500;
 }

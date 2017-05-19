@@ -1,6 +1,6 @@
 body {
   font-family: Intro;
-  font-weight: ;
+  font-weight: 300;
   font-size: 14px;
   min-width: 320px;
   position: relative;
@@ -119,7 +119,8 @@ body textarea:required:valid {
 }
 .user_info p {
   font-size: 12px;
-  font-family: GothamPR;
+  font-family: Gotham;
+  font-weight: 200;
   color: #fff;
 }
 
@@ -154,8 +155,8 @@ body textarea:required:valid {
 
 }
 .aside_content li a::before {
-    font-family: Awesome;
-    font-size: 18px;
+    font-family: Myfont;
+    font-size: 22px;
     margin-left: -55px;
     margin-right: 22px;
     line-height: 0;
@@ -164,24 +165,22 @@ body textarea:required:valid {
     transition: 0.5s;
 }
 .aside_content li:nth-child(1) a::before {
-    content: "\f0b1";
+    content: "\e1";
 }
 .aside_content li:nth-child(2) a::before {
-    content: "\f2c2";
-    font-size: 16px;
+    content: "\e2";
 }
 .aside_content li:nth-child(3) a::before {
-    content: "\f041";
-    font-size: 21px;
+    content: "\e3";
     margin-top: -3px;
-    margin-left: -52px;
+    margin-left: -54px;
     margin-right: 25px;
 }
 .left_side.active .aside_content li a::before {
   margin-left: 0;
 }
 .left_side.active .aside_content li:nth-child(3) a::before {
-  margin-left: 5px;
+  margin-left: 0;
 }
 .left_side .aside_content nav {
   margin-top: -110px;
@@ -291,7 +290,6 @@ body textarea:required:valid {
   margin: 0 3px 8px;
   font-size: 13px;
   border: none;
-  letter-spacing: 3px;
   outline: none;
 }
 .filter_label:hover, .filter_label.active {
