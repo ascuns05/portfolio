@@ -217,7 +217,6 @@ body textarea:required:valid {
   height: 10px;
   margin: 30px 8px 0;
   border-radius: 20px;
-  background-color: #fff;
   animation: dot 1s infinite;
 }
 @keyframes dot {

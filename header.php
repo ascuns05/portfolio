@@ -3,7 +3,6 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru" class="no-js"> <!--<![endif]-->
-
 <head>
 
 	<meta charset="utf-8">
@@ -30,7 +29,7 @@
 		<div class="aside_content">
 			
 			<div class="user_info">
-				<img src="<?php echo get_the_post_thumbnail_url($contacts_id); ?>" alt="<?php echo get_bloginfo('name'); ?>" />
+				<img src="<?php echo get_the_post_thumbnail_url(url_to_postid("/about/")); ?>" alt="<?php echo get_bloginfo('name'); ?>" />
 				<h2><?php echo get_bloginfo('name'); ?></h2>
 				<p><?php echo get_bloginfo('description'); ?></p>
 			</div>
