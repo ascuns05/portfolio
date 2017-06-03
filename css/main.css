@@ -25,14 +25,14 @@ body textarea:required:valid {
 }
 /*Сайдбар*/
 .left_side {
-  background-color: #3f6bbb;
+  background-color: #000; 
   position: fixed;
   left: 0;
   top: 0;
   width: 50px;
   height: 100%;
   z-index: 10;
-  color: #fff;
+  color: #333;
   outline: none;
   transition: 0.5s; 
   overflow-x: hidden;
@@ -78,7 +78,7 @@ body textarea:required:valid {
   -ms-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  top: 8px;
+  top: 8px;colo
   width: 24%;
 }
 .btn_mnu.active .btn_row:last-child {
@@ -113,6 +113,7 @@ body textarea:required:valid {
   border-radius: 50%;
 }
 .user_info h2 {
+  color: #fff;
   font-size: 22px;
   font-family: Intro;
   font-weight: 600;
@@ -147,9 +148,11 @@ body textarea:required:valid {
 .aside_content li a:hover,
 .aside_content li.current-menu-item a {
   background-color: #fff;
+  color: #000;
 }
 .aside_content li.menu-item-home a {
   background-color: transparent;
+  color: #fff;
 }
 .aside_content li:first-child a {
 
@@ -295,8 +298,8 @@ body textarea:required:valid {
 .filter_label:hover, .filter_label.active {
   background-color: none;
   opacity: 1;
-  border-bottom: solid 4px #3f6bbb;
-  color: #3f6bbb;
+  border-bottom: solid 4px #000;
+  color: #000;
 }
 /*ABOUT*/
 .inside {
@@ -311,7 +314,7 @@ body textarea:required:valid {
 
 }
 .content_header p {
-  font-family: GothamPR;
+  font-family: Gotham;
   letter-spacing: 3px;
 }
 .content_header h1 {
