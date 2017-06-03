@@ -78,7 +78,7 @@ body textarea:required:valid {
   -ms-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  top: 8px;colo
+  top: 8px;
   width: 24%;
 }
 .btn_mnu.active .btn_row:last-child {
@@ -154,9 +154,6 @@ body textarea:required:valid {
   background-color: transparent;
   color: #fff;
 }
-.aside_content li:first-child a {
-
-}
 .aside_content li a::before {
     font-family: Myfont;
     font-size: 22px;
@@ -197,6 +194,7 @@ body textarea:required:valid {
 /*Загрузка*/
 .loader .loader_inner h1 {
   font-family: MuseoSans;
+  color: #fff;
   font-size: 47px;
 
 }
@@ -208,7 +206,7 @@ body textarea:required:valid {
   bottom: 0;
   left: 0;
   height: 100vh;
-  background-color: #ececec;
+  background-color: #000;
   z-index: 15;
   align-items: center;
   display: flex;
@@ -219,12 +217,12 @@ body textarea:required:valid {
   height: 10px;
   margin: 30px 8px 0;
   border-radius: 20px;
-  background-color: tomato;
+  background-color: #fff;
   animation: dot 1s infinite;
 }
 @keyframes dot {
   from {background-color: transparent;}
-  to {background-color: tomato;}
+  to {background-color: transparent;}
 }
 
 .content {
@@ -250,7 +248,7 @@ body textarea:required:valid {
   color: #fff;
   padding: 5px;
   margin: 8px;
-  font-family: GothamPR;
+  font-family: Gotham;
   opacity: 0;
   z-index: 0;
   text-align: center;
@@ -290,7 +288,7 @@ body textarea:required:valid {
   transition: 0.5s;
   padding: 0px 0px;
   opacity: 0.8;
-  margin: 0 3px 8px;
+  margin: 0 6px 8px;
   font-size: 13px;
   border: none;
   outline: none;
@@ -303,7 +301,7 @@ body textarea:required:valid {
 }
 /*ABOUT*/
 .inside {
-  background-color: #333;
+  background-color: #0a0a0a;
 }
 .inside .content {
   padding: 80px 5% 40px;
@@ -348,14 +346,15 @@ body textarea:required:valid {
   align-items: center;
   border: 1px solid #fff;
   margin: 0 5px 0;
-  border-radius: 50px;
+  border-radius: 50%;
   transition: 0.5s;
   background-color: #fff;
 }
 .icon:hover {
+  border-radius: 0;
   text-decoration: none;
   color: #eee;
-  background-color: #333;
+  height: 0;
 }
 .instagram:before {
     content: "\f16d";
@@ -397,7 +396,7 @@ body textarea:required:valid {
   text-align: center;
 }
 .post p {
-  font-family: GothamPR;
+  font-family: Gotham;
   font-weight: 100;
 }
 .post a {
