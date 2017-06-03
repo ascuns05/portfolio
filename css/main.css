@@ -165,13 +165,13 @@ body textarea:required:valid {
     transition: 0.5s;
 }
 .aside_content li:nth-child(1) a::before {
-    content: "\e1";
+    content: "\e3";
 }
 .aside_content li:nth-child(2) a::before {
     content: "\e2";
 }
 .aside_content li:nth-child(3) a::before {
-    content: "\e3";
+    content: "\e1";
     margin-top: -3px;
     margin-left: -54px;
     margin-right: 25px;
