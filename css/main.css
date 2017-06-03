@@ -222,7 +222,7 @@ body textarea:required:valid {
 }
 @keyframes dot {
   from {background-color: transparent;}
-  to {background-color: transparent;}
+  to {background-color: #fff;}
 }
 
 .content {
